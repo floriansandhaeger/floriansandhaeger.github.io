@@ -87,9 +87,15 @@ p {
   background-color: #FFFFFF;
 }
 
+/* Left and right small column */
+.column.sidesmall {
+  width: 1%;
+  background-color: #FFFFFF;
+}
+
 /* Middle column */
 .column.middle {
-  width: 50%;
+  width: 48%;
   background-color: #FFFFFF;
 }
 
@@ -105,7 +111,7 @@ p {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
-    width: 100%;
+    width: 98%;
   }
 }
 
@@ -139,10 +145,16 @@ a:active {
 <body>
 
 <div class="row">
-  
+
+    <div class="column sidesmall">
+    <p> </p>
+    </div>
+	
     <div class="column side">
     <p> </p>
     </div>
+
+    
   
     <div class="column middle">
 
@@ -238,7 +250,11 @@ a:active {
     </div>
       <p> </p>
     <div class="column side">
-      
+    <p> </p> 
+    </div>
+
+    <div class="column sidesmall">
+    <p> </p>
     </div>
 </div>
   
